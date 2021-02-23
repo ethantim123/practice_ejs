@@ -22,7 +22,7 @@ app.get("/", (req, res) =>{
     ];
     
     // res.send("This is homepage.");
-    res.render("index.ejs");
+    res.render("index.ejs", { languages });
 });
 
 app.get("/response", (req, res) =>{
